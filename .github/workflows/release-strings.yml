@@ -1,0 +1,15 @@
+name: release-strings
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  print-release-notes:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print release notes
+        run: |
+          echo "The Meridian Console now starts twice as fast."
+          echo "Administrators can enable the audit trail from the workspace settings."
+          echo "We fixed a bug that crashed the app when exporting large reports."
