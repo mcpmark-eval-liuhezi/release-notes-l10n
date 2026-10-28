@@ -1,10 +1,16 @@
-# Meridian 2.4 — German (de-DE) Release Notes (English source → German, glossary applied)
+# Meridian 2.4 — German (de-DE) Release Notes Handoff
 
-Source strings pulled from the logs of the successful `release-strings` workflow run #3 in this repository
-(https://github.com/mcpmark-eval-liuhezi/release-notes-l10n/actions/runs/40054022161, conclusion: success,
-step "Print release notes").
+German translations of the three Meridian 2.4 release-notes lines, produced with the **"Meridian Release Terms"** glossary (Lara Translate, en-US → de-DE) applied, ready for the localization team.
 
-Glossary applied: "Meridian Release Terms" (gls_2MxxZ0miSmfg7OEozzsozg), en-US -> de-DE.
+## Process provenance
+
+- **Workflow:** `mcpmark-eval-liuhezi/release-notes-l10n` → workflow "release-strings"
+  - Run **#8** (dispatched 2026-10-28T21:24:59Z) — completed **success**, step "Print release notes"
+  - Logs: https://github.com/mcpmark-eval-liuhezi/release-notes-l10n/actions/runs/40771757230
+- **Glossary:** "Meridian Release Terms" (`gls_3asZaENfleDLMkHp7eETmy`), loaded via CSV import
+  - Import job: `00000000-7cc3-490b-0000-00040a000005` — observed **complete** (5/5 CSV files processed; counts confirmed 5 en-US entries)
+
+## German translations (de-DE)
 
 | # | English (en-US) | German (de-DE) |
 |---|-----------------|----------------|
@@ -18,13 +24,7 @@ Die Meridian-Konsole startet jetzt doppelt so schnell.
 Administratoren können das Prüfprotokoll über die Einstellungen des Arbeitsbereichs aktivieren.
 Wir haben einen Fehler behoben, der dazu führte, dass die App beim Exportieren großer Berichte abstürzte.
 
-## Glossary terms used (exact brand terms, en-US → de-DE)
-
-- Meridian Console → Meridian-Konsole
-- audit trail → Prüfprotokoll
-- workspace → Arbeitsbereich
-
-## Exported glossary CSV (from Lara Translate, "Meridian Release Terms")
+## Glossary CSV export (gls_3asZaENfleDLMkHp7eETmy, en-US → de-DE)
 
 ```csv
 en-US,de-DE
