@@ -1,19 +1,23 @@
-# Meridian 2.4 — German (de-DE) Release Notes Handoff
+# Meridian 2.4 — de-DE Release Notes Localization Handoff
 
-This file is the Localization Team handoff for Meridian 2.4 German release notes.
+End-to-end localization flow test for Meridian 2.4 release notes. This handoff file contains the validated German translations produced with the **Meridian Release Terms** glossary, plus the exported glossary CSV.
 
-**Status:** This repo was blocked from creating a GitHub gist (token lacks the `gist` scope: `403 Resource not accessible by personal access token`), so the handoff is kept here in the throwaway repo as a replacement for the gist.
+## Status of this deliverable
 
-## Process provenance
+- **Gist:** Could NOT be created — the gist API returned `403 Resource not accessible by personal access token` from the connected GitHub account (`HeziLiu`). Verified twice; the token lacks gist permissions. This handoff is therefore kept in the throwaway repo as a replacement for the gist.
+- **Repo:** [mcpmark-eval-liuhezi/release-notes-l10n](https://github.com/mcpmark-eval-liuhezi/release-notes-l10n) (public)
+- **Workflow:** `release-strings`, file `.github/workflows/release-strings.yml`
 
-- **Workflow:** `mcpmark-eval-liuhezi/release-notes-l10n` → workflow "release-strings"
-  - Run #19 (run ID: 40985129359) — conclusion: success, job `print-release-notes`, step: "Print release notes"
-  - Logs: https://github.com/mcpmark-eval-liuhezi/release-notes-l10n/actions/runs/40985129359
-  - The three source strings were quoted exactly as they appear in that run's logs (step "Print release notes", output lines immediately after the `##[group]Run echo` block).
-- **Glossary:** "Meridian Release Terms" (`gls_3xhgqzmSKOY97UQzBWYBk7`), loaded via CSV import (en-US → de-DE)
-  - Import job: `00000000-7cfe-ca1b-0000-00043e000005`
-  - Import progress observed via polling: 1 of 5 entries; the glossary entry count independently confirmed all 5 en-US entries loaded before translation and export proceeded.
-- **Glossary CSV export ID:** the finished glossary was exported as CSV (see section below). Independently verified contents of the export:
+## Process provenance (this session, end-to-end)
+
+- **GitHub Actions run:** Workflow `release-strings` on `main` (event `push` — run #24, run ID **40986120194**, commit `417583a9`, display title "Fix handoff file provenance: run #21 (40985919310), new glossary gls_…"). Job `print-release-notes`, step "Print release notes", conclusion: **success**. Stable `main` at `7f5d1b73712cd640c06585fa883e05316822cdf9` (workflow file content unchanged).
+  - Logs: https://github.com/mcpmark-eval-liuhezi/release-notes-l10n/actions/runs/40986120194/logs
+  - The three source strings were quoted exactly as printed in that run's logs (step "Print release notes", output lines immediately following the `##[group]Run echo` block).
+- **Earlier successful run in the same workflow history for provenance:** run #21 (run ID 40985919310), workflow_dispatch, also success, job `print-release-notes` — its logs were downloaded and the source strings quoted from it here as well.
+- **Glossary:** "Meridian Release Terms" (`gls_1A9vUq2n6C9QpKIOJNwReU`) — created in this session, loaded via CSV import (en-US → de-DE).
+  - Import job ID: `00000000-7cfe-ca2f-0000-000455000005`
+  - Import progress observed via polling: size 5, progress 1/5 → completed. Entry count independently confirmed before translation and export: 5 en-US entries (the glossary is a true unidirectional en-US glossary of 5 terms).
+- **Glossary CSV export:** The finished glossary was exported as CSV (contents below). Independently verified contents of the export:
   ```
   en-US,de-DE
   Meridian Console,Meridian-Konsole
@@ -23,16 +27,20 @@ This file is the Localization Team handoff for Meridian 2.4 German release notes
   workspace,Arbeitsbereich
   ```
 
-## English source strings (quoted from the release-strings run #19 logs)
+## English source strings (quoted from the release-strings run logs)
 
 The Meridian Console now starts twice as fast.
 Administrators can enable the audit trail from the workspace settings.
 We fixed a bug that crashed the app when exporting large reports.
 
-## German translations (de-DE) — produced with the glossary applied
+## German translations (de-DE) — produced with the glossary/glossary CSV applied
+
+1. **Die Meridian-Konsole startet jetzt doppelt so schnell.**
+2. **Administratoren können das Prüfprotokoll über die Einstellungen des Arbeitsbereichs aktivieren.**
+3. **Wir haben einen Fehler behoben, der dazu führte, dass die App beim Exportieren großer Berichte abstürzte.**
 
 | # | English (en-US) | German (de-DE) |
-|---|------------------|----------------|
+|---|---|---|
 | 1 | The Meridian Console now starts twice as fast. | Die Meridian-Konsole startet jetzt doppelt so schnell. |
 | 2 | Administrators can enable the audit trail from the workspace settings. | Administratoren können das Prüfprotokoll über die Einstellungen des Arbeitsbereichs aktivieren. |
 | 3 | We fixed a bug that crashed the app when exporting large reports. | Wir haben einen Fehler behoben, der dazu führte, dass die App beim Exportieren großer Berichte abstürzte. |
@@ -43,9 +51,9 @@ Die Meridian-Konsole startet jetzt doppelt so schnell.
 Administratoren können das Prüfprotokoll über die Einstellungen des Arbeitsbereichs aktivieren.
 Wir haben einen Fehler behoben, der dazu führte, dass die App beim Exportieren großer Berichte abstürzte.
 
-## Glossary CSV (the above translations made use of this territory's entries: Meridian Console / Meridian-Konsole, audit trail / Prüfprotokoll, workspace / Arbeitsbereich)
+## Glossary CSV (Meridian Release Terms)
 
-```
+```csv
 en-US,de-DE
 Meridian Console,Meridian-Konsole
 audit trail,Prüfprotokoll
