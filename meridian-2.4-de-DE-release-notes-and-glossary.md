@@ -1,22 +1,30 @@
-# Meridian 2.4 — German Release Notes & Glossary Handoff
+# Meridian 2.4 Release Notes — German (de-DE) Localization Handoff
 
-## German Translations (glossary: Meridian Release Terms applied)
+## Source Release Notes (English)
 
-| # | English source | German (de-DE) |
-|---|---|---|
-| 1 | The Meridian Console now starts twice as fast. | Die Meridian-Konsole startet jetzt doppelt so schnell. |
-| 2 | Administrators can enable the audit trail from the workspace settings. | Administratoren können das Prüfprotokoll über die Einstellungen des Arbeitsbereichs aktivieren. |
-| 3 | We fixed a bug that crashed the app when exporting large reports. | Wir haben einen Fehler behoben, der dazu führte, dass die App beim Exportieren großer Berichte abstürzte. |
+1. The Meridian Console now starts twice as fast.
+2. Administrators can enable the audit trail from the workspace settings.
+3. We fixed a bug that crashed the app when exporting large reports.
 
-Brand terms enforced via glossary: Meridian Console → Meridian-Konsole; audit trail → Prüfprotokoll; workspace → Arbeitsbereich.
+## German Translations (de-DE)
 
-## Exported Glossary CSV (Meridian Release Terms, en-US → de-DE)
+1. Die Meridian-Konsole startet jetzt doppelt so schnell.
+2. Administratoren können das Prüfprotokoll über die Einstellungen des Arbeitsbereichs aktivieren.
+3. Wir haben einen Fehler behoben, der dazu führte, dass die App beim Exportieren großer Berichte abstürzte.
 
-```csv
+## Applied Glossary Terms (Meridian Release Terms)
+
+- Meridian Console → Meridian-Konsole
+- audit trail → Prüfprotokoll
+- workspace → Arbeitsbereich
+- release notes → Versionshinweise
+- quick start → Schnellstart
+
+## Exported Glossary CSV (en-US → de-DE)
+
 en-US,de-DE
 Meridian Console,Meridian-Konsole
 audit trail,Prüfprotokoll
 quick start,Schnellstart
 release notes,Versionshinweise
 workspace,Arbeitsbereich
-```
